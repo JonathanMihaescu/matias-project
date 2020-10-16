@@ -1,3 +1,70 @@
-h1{
-	color: orange;
+@import "utils/reset.css";
+
+html,body{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+/* FOOTER */
+
+footer{
+	display: grid;
+	grid-template-columns: max-content auto;
+
+	box-sizing: border-box;
+	width: 100%;
+
+	padding: 2em 5em;
+
+	font-family: 'Spartan', sans-serif;
+	font-weight: 800;
+	background-color: #2b3538;
+	color: white;
+}
+
+footer div{
+	grid-column: 1/2;
+
+	font-size: 3em;
+}
+
+footer form{
+	grid-column: 2/3;
+	align-self: center;
+
+	margin-left: 2em;;
+}
+
+#subscribe-input{
+	box-sizing: border-box;
+	width: 60%;
+	height: 2em;
+	padding-left: 1em;
+
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 1.5em;
+
+
+	border: 0;
+	border-top-left-radius: 10px;;
+	border-bottom-left-radius: 10px;;
+}
+
+#subscribe-button{
+	font-family: inherit;
+	font-weight: 800;
+	color: white;
+	font-size: 1.5em;
+
+	background-color: #d67369;
+
+	height: 2em;
+	width: 20%;
+	margin-left: -1em;;
+
+	border: 0;
+	border-top-right-radius: 10px;;
+	border-bottom-right-radius: 10px;;
 }
