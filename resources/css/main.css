@@ -14,7 +14,7 @@ section,footer{
 	justify-items: center;
 	align-items: center;
 
-	padding: 2em 5em;
+	padding: 2em 2em;
 	
 }
 
@@ -86,6 +86,8 @@ section,footer{
 .three-column-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1em;;
+	row-gap: 1em;;
 
 	justify-items: center;
 	width: 100%;
@@ -106,19 +108,100 @@ section,footer{
 	font-style: unset;
 }
 
-/* DONATION BOX */
+/* HEADER */
 
-.donation-box{
-	border:1px solid black;
-	margin: 1em;
-	padding: 1em;
-	text-align: center;
+header nav{
+	display: table;
+	box-sizing: border-box;
+	height: 3em;
 	width: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: #2b3538;
+}
+
+#logo{
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 2em;
+}
+
+#logo div{
+
+	max-width: 1150px;
+	margin: 0 auto;
+	color:white;
+
+	font-family: 'Spartan', sans-serif;
+	font-weight: 600;
+	font-size: 1.2em;
+	text-align: center;
 
 }
 
-.donation-box div:first-child{
-	border-bottom:1px solid black;
+#header-image{
+	background: url("../images/main/main-bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 400px;
+}
+
+/* MAIN */
+main{
+	max-width: 1200px;;
+	margin: 0 auto;
+}
+
+#sub-heading{
+	font-family: 'Spartan', sans-serif;
+	font-weight: 600;
+	font-size: 1.5em;
+	margin-bottom: 0.7em;
+	font-style: italic;
+	
+	text-align: center;
+}
+
+#heading{
+	font-family: 'Spartan', sans-serif;
+	font-weight: 800;
+	line-height: 1.5em;;
+	font-size: 3em;
+	text-align: center;
+
+}
+
+/* DONEAZA SECTION  */
+.donation-box{
+	box-sizing: border-box;
+	border:1px solid black;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 500px;;
+	text-align: center;
+	padding:1em;
+
+}
+
+.donation-label{
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 1em;;
+	padding: 0 0.5em;;
+}
+
+.donation-button{
+	display: block;
+	padding-bottom: 1em;;
+}
+
+.donation-tag{
+	display: block;
 }
 
 #option-1{
@@ -144,6 +227,7 @@ section,footer{
 #option-5{
 	grid-row: 2/3;
 	grid-column: 2/4;
+	max-width: 1084px;
 }
 
 /* FOOTER */
